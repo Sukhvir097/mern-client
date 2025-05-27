@@ -1,5 +1,12 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -7,18 +14,35 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Environment variables
+.env
+.env.*.local
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS and system files
 .DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+!.vscode/extensions.json
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Runtime files
+pids/
+*.pid
+*.seed
+
+# Test coverage
+coverage/
+
+# MongoDB dump files (if any)
+dump/
+
+# Optional: Ignore uploads or static generated content
+uploads/
+public/uploads/
