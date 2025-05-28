@@ -15,7 +15,7 @@ const handleSubmit = async (e) => {
   await axios.post(`${apiUrl}/user/createUser`, {name,email,age});
 
     // Redirect after success
-    alert("User successfully created!");
+    alert("User successfully created!!");
     navigate('/');
 };
 
