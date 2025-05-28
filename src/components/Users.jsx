@@ -18,7 +18,7 @@ function Users() {
     if (window.confirm("Are you sure you want to delete this user?")) {
       axios.delete(`${apiUrl}/user/users/${userId}`)
         .then(() => {
-          alert("User deleted successfully!");
+          alert("User deleted successfully!!");
           setusers(users.filter(user => user._id !== userId));
         })
         .catch(err => {
