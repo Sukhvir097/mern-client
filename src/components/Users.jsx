@@ -9,7 +9,7 @@ function Users() {
   const [users, setusers] = useState([])
 
   useEffect(() => {
-       axios.get(`${apiUrl}/user/u`)
+       axios.get(`${apiUrl}/user`)
       .then(result => setusers(result.data))
       .catch(err => console.log(err))
   }, [])
