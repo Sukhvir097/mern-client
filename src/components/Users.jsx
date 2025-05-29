@@ -2,14 +2,14 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const apiUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
+const apiUrl = import.meta.env.VITE_API_BASE_URL || 'api/';
 
 function Users() {
   
   const [users, setusers] = useState([])
 
   useEffect(() => {
-       axios.get(`${apiUrl}/user`)
+       axios.get(`${apiUrl}/user/u`)
       .then(result => setusers(result.data))
       .catch(err => console.log(err))
   }, [])
